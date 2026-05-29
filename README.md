@@ -129,18 +129,21 @@ pip install onnxruntime-gpu
 
 ### Download Model Weights
 
-Large model files are stored separately (not in the repo). Download from Google Drive:
+Large model files are hosted on Google Drive. Download and place them as shown:
 
-| File | Description | Size |
-|------|-------------|------|
-| `best.pt` | Trained FP32 PyTorch weights | 5.96 MB |
-| `ppe_yolov8n_fp16.onnx` | True FP16 quantized ONNX | 5.88 MB |
+| File | Description | Size | Link |
+|------|-------------|------|------|
+| `best.pt` | Trained FP32 PyTorch weights | 5.96 MB | [⬇️ Download](https://drive.google.com/file/d/1XzCR-5bIhb_z1qvUEqivvdpFacW-XV9i/view?usp=sharing) |
+| `ppe_yolov8n_fp16.onnx` | True FP16 quantized ONNX (edge model) | 5.88 MB | [⬇️ Download](https://drive.google.com/file/d/1YEsEoj6865vcytqYEVzlR_Nx7SeT3TZy/view?usp=sharing) |
 
-> **Place files at:**
-> - `best.pt` → `runs/ppe_yolov8n_training/weights/best.pt`
-> - `ppe_yolov8n_fp16.onnx` → `models/ppe_yolov8n_fp16.onnx`
-
-> *(Add your Google Drive link here after uploading)*
+**Place downloaded files at:**
+```
+YOLOv8-EdgeAI-PPE-Detection/
+├── runs/ppe_yolov8n_training/weights/
+│   └── best.pt                     ← place here
+└── models/
+    └── ppe_yolov8n_fp16.onnx       ← place here (already in repo)
+```
 
 ---
 
