@@ -562,7 +562,7 @@ def draw_hud(
         y_offset += 28
     
     # ── Bottom Status Bar ─────────────────────────────────────────────────
-    status = "LIVE  |  Antigravity Edge  |  ONNX FP16"
+    status = "LIVE  |  YOLOv8n  |  ONNX FP16"
     cv2.putText(
         frame, status,
         (15, h - 15),
@@ -659,14 +659,6 @@ def main():
        e. Display annotated frame
     4. Clean up resources on exit (ESC or 'q')
     """
-    # ── Startup Banner ────────────────────────────────────────────────────
-    banner = """
-+========================================================================+
-|       PPE DETECTION SYSTEM  --  LIVE EDGE INFERENCE ENGINE            |
-|               Antigravity Edge Compute Platform                        |
-+========================================================================+
-    """
-    print(banner)
     
     # ── Step 1: Initialize ONNX Runtime Session ───────────────────────────
     logger.info("[1/3] Initializing ONNX Runtime inference session...")
@@ -783,7 +775,7 @@ def main():
             )
             
             # ── Display Frame ─────────────────────────────────────────────
-            cv2.imshow("PPE Detection | Antigravity Edge", annotated_frame)
+            cv2.imshow("PPE Detection | Live Inference", annotated_frame)
             
             # ── Key Input Handling ────────────────────────────────────────
             key = cv2.waitKey(1) & 0xFF
