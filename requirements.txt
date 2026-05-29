@@ -1,0 +1,25 @@
+# =============================================================================
+#  PPE Detection System — Dependency Manifest
+# =============================================================================
+#  Compatible with: Windows 11 / Python 3.10+
+#  Install:         pip install -r requirements.txt
+# =============================================================================
+
+# ── Core ML Framework ────────────────────────────────────────────────────────
+ultralytics>=8.2.0             # YOLOv8 training, export, and utilities
+torch>=2.1.0                   # PyTorch backend for training
+torchvision>=0.16.0            # Vision transforms and dataset utilities
+
+# ── ONNX Export & Runtime ────────────────────────────────────────────────────
+onnx>=1.15.0                   # ONNX graph format support & validation
+onnxruntime>=1.17.0            # ONNX Runtime inference engine (CPU)
+# onnxruntime-gpu>=1.17.0      # Uncomment for CUDA GPU acceleration
+
+# ── Computer Vision ──────────────────────────────────────────────────────────
+opencv-python>=4.9.0           # Video capture, image processing, HUD rendering
+
+# ── Numerical Computing ─────────────────────────────────────────────────────
+numpy>=1.24.0                  # Vectorized array operations, custom NMS
+
+# ── Optional: ONNX Graph Optimization ────────────────────────────────────────
+# onnxsim>=0.4.36              # ONNX Simplifier (used during export)

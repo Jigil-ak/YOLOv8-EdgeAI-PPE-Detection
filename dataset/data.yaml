@@ -1,0 +1,25 @@
+# =============================================================================
+#  PPE Detection Dataset — YOLOv8 Configuration
+# =============================================================================
+#  Source: Roboflow Universe (CC BY 4.0)
+#  Format: YOLOv8 native (images + YOLO-format .txt labels)
+# =============================================================================
+
+# Absolute paths to image directories (Windows-compatible)
+train: C:\Users\jigil ak\Documents\My Projects\Computer Vision Engineer_Assignment\dataset\train\images
+val: C:\Users\jigil ak\Documents\My Projects\Computer Vision Engineer_Assignment\dataset\valid\images
+test: C:\Users\jigil ak\Documents\My Projects\Computer Vision Engineer_Assignment\dataset\test\images
+
+# Number of classes
+nc: 4
+
+# Class names (index-ordered)
+names: ['Gloves', 'Vest', 'helmet', 'person']
+
+# Metadata
+roboflow:
+  workspace: jigils-workspace
+  project: ppe-detection-with-gloves-ii2k0
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/jigils-workspace/ppe-detection-with-gloves-ii2k0/dataset/1

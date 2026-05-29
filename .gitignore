@@ -1,0 +1,53 @@
+# ──────────────────────────────────────────────────────────
+# PPE Detection System — .gitignore
+# ──────────────────────────────────────────────────────────
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+
+# Virtual environments
+venv/
+env/
+.env/
+
+# Large model weights (upload separately to Google Drive / HuggingFace)
+*.pt
+*.pth
+*.weights
+yolov8n.pt
+
+# ONNX models (upload separately — track only small ones if needed)
+# Uncomment the line below to also exclude .onnx files:
+# *.onnx
+
+# Dataset zip (large)
+dataset.zip
+
+# Ultralytics training cache
+dataset/train/labels.cache
+dataset/valid/labels.cache
+dataset/test/labels.cache
+
+# Training run outputs (large — weights tracked separately)
+runs/
+
+# Jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+*.log
